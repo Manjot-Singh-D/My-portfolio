@@ -1,0 +1,20 @@
+@import url("hover-min.css");
+html {
+  height: max-content;
+}
+#root {
+  height: 100%;
+}
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+  background: darkgray;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 15px;
+  border: 1px solid darkgray;
+}
