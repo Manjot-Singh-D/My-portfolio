@@ -42,8 +42,6 @@ const upload = multer({ storage: storage, fileFilter: fileFilter });
 router.post("/:id/resume", upload.single("resume"), async (req, res) => {
   let resume = "";
   await cloudinary.uploader.upload(req.file.path, (err, result) => {
-    console.log("Error : ", err);
-    console.log("Result : ", result);
     resume = result;
   });
   Portfolio.updateOne(
@@ -68,8 +66,6 @@ router.patch(
   async (req, res) => {
     let projectPictureDetails = "";
     await cloudinary.uploader.upload(req.file.path, (err, result) => {
-      console.log("Error : ", err);
-      console.log("Result : ", result);
       projectPictureDetails = result;
     });
     let name = "projectPicture_" + req.params.name;
@@ -104,9 +100,7 @@ router.patch("/deleteProjectPictures/:name", async (req, res) => {
   );
 });
 router.get("/project/pictures", (req, res) => {
-  console.log("Hello getting input. ");
   Portfolio.findOne({ key: "19012001" }, (err, foundUser) => {
-    console.log(foundUser);
     res.status(200).send(foundUser);
   });
 });
@@ -126,8 +120,6 @@ router.post(
       case "basicDetails": {
         let profilePictureDetails = "";
         await cloudinary.uploader.upload(req.file.path, (err, result) => {
-          console.log("Error : ", err);
-          console.log("Result : ", result);
           profilePictureDetails = result;
         });
         Portfolio.find({ key: req.params.id }, async (err, foundUser) => {
@@ -170,17 +162,12 @@ router.patch(
   "/:id/:route",
   upload.single("profilePicture"),
   async (req, res) => {
-    console.log("in patch req : ", req);
     switch (req.params.route) {
       case "basicDetails": {
         let profilePictureDetails = "";
         await cloudinary.uploader.upload(req.file.path, (err, result) => {
-          console.log("Error : ", err);
-          console.log("Result : ", result);
           profilePictureDetails = result;
         });
-        console.log("profilePictureDetails : ", profilePictureDetails);
-        console.log("profilePictureDetails.url : ", profilePictureDetails.url);
         Portfolio.updateOne(
           { key: req.params.id },
           {
