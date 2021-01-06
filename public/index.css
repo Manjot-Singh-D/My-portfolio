@@ -5,6 +5,9 @@ html {
 #root {
   height: 100%;
 }
+#particles-js {
+  height: 100vh;
+}
 html::-webkit-scrollbar {
   width: 5px;
 }

@@ -16,6 +16,7 @@ const portfolioSchema = new mongoose.Schema({
   skillsDetails: [
     { Title: String, details: [{ name: String, percent: Number }] },
   ],
+  projectPictures: Array,
   projectsDetails: [
     {
       name: String,

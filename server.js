@@ -7,7 +7,7 @@ const path = require("path");
 
 const app = express();
 
-const PORT = process.env.PORT || 8000;
+const PORT = 8000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -18,7 +18,7 @@ app.use(express.static(path.join("public")));
 
 mongoose.connect(
   `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.abbod.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
-  { useNewUrlParser: true, useUnifiedTopology: true }
+  { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
 );
 
 app.use("/api", Routes);
