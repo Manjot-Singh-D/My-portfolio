@@ -1,0 +1,26 @@
+.DeletableComponent {
+  background: #eed;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.DeletableComponent .DeletableComponent_name {
+  color: black;
+  width: 90% !important;
+  margin-right: 0%;
+  display: flex;
+  clear: both;
+  display: inline-block;
+  overflow: auto;
+  white-space: nowrap;
+}
+.DeletableComponent .DeletableComponent_name input {
+  width: 100%;
+  background: #00000000;
+  border: none;
+  outline: none;
+}

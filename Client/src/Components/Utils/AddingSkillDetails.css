@@ -1,0 +1,20 @@
+.AddingSkillsDetails {
+  background: #fff;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.AddingSkillsDetails .AddingSkillsDetails_name .AddingSkillsDetails_percent {
+  color: black;
+  width: 90% !important;
+  margin-right: 0%;
+  display: flex;
+  clear: both;
+  display: inline-block;
+  overflow: auto;
+  white-space: nowrap;
+}

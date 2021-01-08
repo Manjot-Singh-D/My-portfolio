@@ -1,0 +1,118 @@
+.projectsModel {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px;
+  padding: 10px;
+}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+.projectsModel .number {
+  height: 100%;
+  width: 30%;
+  font-size: 3.5rem;
+  margin-right: 10px;
+  color: #aaaaaa;
+  justify-content: start;
+  font-weight: 900;
+}
+.projectsModel .content {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.projectsModel .content .title {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 3px;
+  font-weight: 800;
+}
+.projectsModel .content .title .name {
+  text-align: start;
+}
+.projectsModel .content .description {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  text-align: start;
+  padding-bottom: 3px;
+}
+.projectsModel .content .link {
+  cursor: pointer;
+  color: lightblue;
+  font-size: 0.6rem;
+  text-align: start;
+}
+@media screen and (max-width: 800px) {
+  .projectsModel {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+  }
+  .projectsModel .number {
+    height: 100%;
+    width: 30%;
+    font-size: 3rem;
+    margin-right: 10px;
+    color: #aaaaaa;
+    justify-content: start;
+    font-weight: 800;
+  }
+  .projectsModel .content {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .projectsModel .content .title {
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    font-weight: 700;
+  }
+  .projectsModel .content .description {
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    text-align: start;
+    padding-bottom: 2px;
+  }
+  .projectsModel .content .link {
+    cursor: pointer;
+    color: lightblue;
+    font-size: 0.6rem;
+    text-align: start;
+  }
+}

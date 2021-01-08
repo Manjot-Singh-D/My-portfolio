@@ -1,0 +1,129 @@
+.aboutPage {
+  height: 100vh;
+  background-color: #343434;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.aboutPage .leftContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutPage .leftContent p {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.aboutPage .leftContent img {
+  box-shadow: 0px 0px 5px #aaaaaa;
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+}
+.aboutPage .rightContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutPage .rightContent .collegeName {
+  font-size: 2rem;
+  font-weight: 800;
+  width: 80%;
+  text-align: center;
+}
+.aboutPage .rightContent .branch {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: -20px;
+}
+.aboutPage .rightContent .skills {
+  color: #8d8f8f;
+  font-weight: 700;
+  line-height: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutPage .rightContent .skills nav {
+  text-align: center;
+  width: 100%;
+}
+.aboutPage .rightContent .content {
+  width: 50%;
+  font-size: 0.8rem;
+  color: #969799;
+  font-weight: bolder;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .aboutPage {
+    height: 100%;
+    background-color: #343434;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 30px;
+  }
+  .aboutPage .leftContent {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .aboutPage .leftContent p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .aboutPage .leftContent img {
+    box-shadow: 0px 0px 5px #aaaaaa;
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+  }
+  .aboutPage .rightContent {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutPage .rightContent .collegeName {
+    font-size: 1.2rem;
+    font-weight: 800;
+    width: 80%;
+    text-align: center;
+  }
+  .aboutPage .rightContent .branch {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: -20px;
+  }
+  .aboutPage .rightContent .skills {
+    color: #8d8f8f;
+    font-weight: 700;
+    line-height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .aboutPage .rightContent .skills nav {
+    text-align: center;
+    width: 100%;
+  }
+  .aboutPage .rightContent .content {
+    width: 80%;
+    font-size: 0.8rem;
+    color: #969799;
+    font-weight: bolder;
+    text-align: center;
+  }
+}

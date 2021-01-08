@@ -1,0 +1,78 @@
+.SkillsCard {
+  width: 250px;
+  height: 340px;
+  display: flex;
+  /* background: #cccccc; */
+  background-image: linear-gradient(to bottom, #cccccc, #00000005);
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px gray;
+  margin: 15px;
+  overflow: auto;
+  z-index: 100000;
+}
+.SkillsCard .content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+.SkillsCard .content .title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #404040;
+  margin-bottom: 15px;
+}
+.SkillsCard .content .skills {
+  line-height: 4px;
+  padding: 10px;
+}
+.SkillsCard .content .skills .skillsName {
+  font-size: 12px;
+}
+.SkillsCard::-webkit-scrollbar {
+  width: 5px;
+}
+
+.SkillsCard::-webkit-scrollbar-track {
+  background: darkgray;
+}
+
+.SkillsCard::-webkit-scrollbar-thumb {
+  background-color: #777777;
+  border-radius: 15px;
+  border: 1px solid darkgray;
+}
+@media screen and (max-width: 700px) {
+  .SkillsCard {
+    width: 150px;
+    height: 180px;
+    display: flex;
+    background-image: linear-gradient(to bottom, #cccccc, #00000005);
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px gray;
+    margin: 5px;
+    overflow: auto;
+  }
+  .SkillsCard .content {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+  }
+  .SkillsCard .content .title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #404040;
+  }
+  .SkillsCard .content .skills {
+    line-height: 3px;
+    padding: 2px;
+  }
+  .SkillsCard .content .skills .skillsName {
+    font-size: 8px;
+  }
+}

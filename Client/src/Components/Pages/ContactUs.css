@@ -1,0 +1,206 @@
+.contactPage {
+  height: 100vh;
+  background-color: #aaaaaa;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.contactPage .title {
+  font-size: 3rem;
+  color: black;
+  font-weight: 700;
+  padding-top: 100px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+.contactPage .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactPage .content .left img {
+  width: 90%;
+  height: auto;
+  margin-left: 40px;
+}
+.contactPage .content .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 30px;
+  padding-left: 50px;
+  /* width: 50%; */
+}
+.contactPage .content .right .title {
+  font-size: 1.5rem;
+  color: #444444;
+  font-weight: 800;
+  padding-top: 25px;
+  margin: 0;
+  text-align: start;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 25px;
+  margin: 0;
+  text-align: center;
+}
+.contactPage .content .right .titleIcon {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.contactPage .content .right .titleName {
+  font-size: 1.5rem;
+  color: #444444;
+  font-weight: 800;
+}
+.contactPage .content .right .content {
+  font-size: 1.4rem;
+  color: #fff;
+  /* text-align: start; */
+  text-align: flex-start;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 700px) {
+  .contactPage {
+    height: max-content !important;
+    background-color: #aaaaaa;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+  .contactPage .title {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 800;
+    padding-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+  .contactPage .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contactPage .content .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactPage .content .left img {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contactPage .content .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column;
+    line-height: 25px; */
+    padding-left: 0%;
+  }
+  .contactPage .content .right .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    padding-top: 15px;
+    margin: 0;
+    text-align: center;
+  }
+  .contactPage .content .right .titleIcon {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .contactPage .content .right .titleName {
+    font-size: 1.3rem;
+    color: #444444;
+    font-weight: 800;
+  }
+  .contactPage .content .right .content {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 300px) {
+  .contactPage {
+    height: max-content !important;
+    background-color: #aaaaaa;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+  .contactPage .title {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 800;
+    padding-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+  .contactPage .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contactPage .content .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactPage .content .left img {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contactPage .content .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column;
+    line-height: 25px; */
+    padding-left: 0%;
+  }
+  .contactPage .content .right .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    margin: 0;
+    text-align: start;
+  }
+  .contactPage .content .right .titleIcon {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .contactPage .content .right .titleName {
+    font-size: 1.3rem;
+    color: #444444;
+    font-weight: 800;
+  }
+  .contactPage .content .right .content {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    width: 70% !important;
+    display: flex;
+  }
+}
